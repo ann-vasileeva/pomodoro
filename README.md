@@ -21,6 +21,7 @@ C, SQLite
 Для работы потребуется установить библиотеку sqlite3
 
 sudo apt-get install sqlite3 libsqlite3-dev
+
 gcc main.c -l
 
 
