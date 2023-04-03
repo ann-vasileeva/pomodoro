@@ -1,6 +1,7 @@
 #pragma once
-#include <time.h>
+
 #include <stdio.h>
+#include <time.h>
 #include <unistd.h>
 
 int convert_to_sec(int d, int h, int m) {

@@ -974,6 +974,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Gnuplot",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Gnuplot"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/bin/gnuplot][v5.4.2()]"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_SQLite3",
 			"properties" : 
 			[
@@ -984,6 +996,22 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[/usr/include][/usr/lib/x86_64-linux-gnu/libsqlite3.so][v3.37.2()]"
+		},
+		{
+			"name" : "GNUPLOT_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/gnuplot"
 		},
 		{
 			"name" : "SQLite3_INCLUDE_DIR",
@@ -1016,6 +1044,18 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libsqlite3.so"
+		},
+		{
+			"name" : "gnuplot_iostream_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for gnuplot_iostream."
+				}
+			],
+			"type" : "PATH",
+			"value" : "gnuplot_iostream_DIR-NOTFOUND"
 		},
 		{
 			"name" : "pomodoro_BINARY_DIR",

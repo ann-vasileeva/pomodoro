@@ -96,6 +96,31 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/home/anna/Downloads/CLion-2021.3.2/clion-2021.3.2/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/anna/Downloads/CLion-2021.3.2/clion-2021.3.2/bin/cmake/linux/share/cmake-3.21/Modules/FindGnuplot.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/anna/Downloads/CLion-2021.3.2/clion-2021.3.2/bin/cmake/linux/share/cmake-3.21/Modules/FindCygwin.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/anna/Downloads/CLion-2021.3.2/clion-2021.3.2/bin/cmake/linux/share/cmake-3.21/Modules/FindMsys.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/anna/Downloads/CLion-2021.3.2/clion-2021.3.2/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/anna/Downloads/CLion-2021.3.2/clion-2021.3.2/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
