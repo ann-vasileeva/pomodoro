@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a library.
+ALSA_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libasound.so
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -183,6 +186,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a program.
 GNUPLOT_EXECUTABLE:FILEPATH=/usr/bin/gnuplot
 
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Path to a file.
 SQLite3_INCLUDE_DIR:PATH=/usr/include
 
@@ -191,6 +197,24 @@ SQLite3_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libsqlite3.so
 
 //The directory containing a CMake configuration file for gnuplot_iostream.
 gnuplot_iostream_DIR:PATH=gnuplot_iostream_DIR-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GLIB_glib-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libglib-2.0.so
+
+//Path to a library.
+pkgcfg_lib_NOTIFY_gdk_pixbuf-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so
+
+//Path to a library.
+pkgcfg_lib_NOTIFY_gio-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgio-2.0.so
+
+//Path to a library.
+pkgcfg_lib_NOTIFY_glib-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libglib-2.0.so
+
+//Path to a library.
+pkgcfg_lib_NOTIFY_gobject-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgobject-2.0.so
+
+//Path to a library.
+pkgcfg_lib_NOTIFY_notify:FILEPATH=/usr/lib/x86_64-linux-gnu/libnotify.so
 
 //Value Computed by CMake
 pomodoro_BINARY_DIR:STATIC=/home/anna/CLionProjects/pomodoro/cmake-build-debug
@@ -331,12 +355,103 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Gnuplot
 FIND_PACKAGE_MESSAGE_DETAILS_Gnuplot:INTERNAL=[/usr/bin/gnuplot][v5.4.2()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding SQLite3
 FIND_PACKAGE_MESSAGE_DETAILS_SQLite3:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libsqlite3.so][v3.37.2()]
+GLIB_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GLIB_CFLAGS_I:INTERNAL=
+GLIB_CFLAGS_OTHER:INTERNAL=
+GLIB_FOUND:INTERNAL=1
+GLIB_INCLUDEDIR:INTERNAL=/usr/include
+GLIB_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GLIB_LDFLAGS:INTERNAL=-lglib-2.0
+GLIB_LDFLAGS_OTHER:INTERNAL=
+GLIB_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLIB_LIBRARIES:INTERNAL=glib-2.0
+GLIB_LIBRARY_DIRS:INTERNAL=
+GLIB_LIBS:INTERNAL=
+GLIB_LIBS_L:INTERNAL=
+GLIB_LIBS_OTHER:INTERNAL=
+GLIB_LIBS_PATHS:INTERNAL=
+GLIB_MODULE_NAME:INTERNAL=glib-2.0
+GLIB_PREFIX:INTERNAL=/usr
+GLIB_STATIC_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GLIB_STATIC_CFLAGS_I:INTERNAL=
+GLIB_STATIC_CFLAGS_OTHER:INTERNAL=
+GLIB_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GLIB_STATIC_LDFLAGS:INTERNAL=-lglib-2.0;-pthread;-lm;-lpcre
+GLIB_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+GLIB_STATIC_LIBDIR:INTERNAL=
+GLIB_STATIC_LIBRARIES:INTERNAL=glib-2.0;m;pcre
+GLIB_STATIC_LIBRARY_DIRS:INTERNAL=
+GLIB_STATIC_LIBS:INTERNAL=
+GLIB_STATIC_LIBS_L:INTERNAL=
+GLIB_STATIC_LIBS_OTHER:INTERNAL=
+GLIB_STATIC_LIBS_PATHS:INTERNAL=
+GLIB_VERSION:INTERNAL=2.72.4
+GLIB_glib-2.0_INCLUDEDIR:INTERNAL=
+GLIB_glib-2.0_LIBDIR:INTERNAL=
+GLIB_glib-2.0_PREFIX:INTERNAL=
+GLIB_glib-2.0_VERSION:INTERNAL=
 //ADVANCED property for variable: GNUPLOT_EXECUTABLE
 GNUPLOT_EXECUTABLE-ADVANCED:INTERNAL=1
+NOTIFY_CFLAGS:INTERNAL=-pthread;-I/usr/include/gdk-pixbuf-2.0;-I/usr/include/libpng16;-I/usr/include/x86_64-linux-gnu;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+NOTIFY_CFLAGS_I:INTERNAL=
+NOTIFY_CFLAGS_OTHER:INTERNAL=-pthread
+NOTIFY_FOUND:INTERNAL=1
+NOTIFY_INCLUDEDIR:INTERNAL=/usr/include
+NOTIFY_INCLUDE_DIRS:INTERNAL=/usr/include/gdk-pixbuf-2.0;/usr/include/libpng16;/usr/include/x86_64-linux-gnu;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+NOTIFY_LDFLAGS:INTERNAL=-lnotify;-lgdk_pixbuf-2.0;-lgio-2.0;-lgobject-2.0;-lglib-2.0
+NOTIFY_LDFLAGS_OTHER:INTERNAL=
+NOTIFY_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+NOTIFY_LIBRARIES:INTERNAL=notify;gdk_pixbuf-2.0;gio-2.0;gobject-2.0;glib-2.0
+NOTIFY_LIBRARY_DIRS:INTERNAL=
+NOTIFY_LIBS:INTERNAL=
+NOTIFY_LIBS_L:INTERNAL=
+NOTIFY_LIBS_OTHER:INTERNAL=
+NOTIFY_LIBS_PATHS:INTERNAL=
+NOTIFY_MODULE_NAME:INTERNAL=libnotify
+NOTIFY_PREFIX:INTERNAL=/usr
+NOTIFY_STATIC_CFLAGS:INTERNAL=-pthread;-I/usr/include/gdk-pixbuf-2.0;-I/usr/include/libpng16;-I/usr/include/x86_64-linux-gnu;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+NOTIFY_STATIC_CFLAGS_I:INTERNAL=
+NOTIFY_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+NOTIFY_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/gdk-pixbuf-2.0;/usr/include/libpng16;/usr/include/x86_64-linux-gnu;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+NOTIFY_STATIC_LDFLAGS:INTERNAL=-lnotify;-lgdk_pixbuf-2.0;-lm;-lpng16;-lm;-lz;-lm;-ljpeg;-ltiff;-lwebp;-lzstd;-llzma;-ljbig;-ljpeg;-ldeflate;-lz;-lm;-lgio-2.0;-lgmodule-2.0;-pthread;-lz;-lmount;-ldl;-lblkid;-lselinux;-lsepol;-lpcre2-8;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lm;-lpcre
+NOTIFY_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+NOTIFY_STATIC_LIBDIR:INTERNAL=
+NOTIFY_STATIC_LIBRARIES:INTERNAL=notify;gdk_pixbuf-2.0;m;png16;m;z;m;jpeg;tiff;webp;zstd;lzma;jbig;jpeg;deflate;z;m;gio-2.0;gmodule-2.0;z;mount;dl;blkid;selinux;sepol;pcre2-8;gobject-2.0;ffi;glib-2.0;m;pcre
+NOTIFY_STATIC_LIBRARY_DIRS:INTERNAL=
+NOTIFY_STATIC_LIBS:INTERNAL=
+NOTIFY_STATIC_LIBS_L:INTERNAL=
+NOTIFY_STATIC_LIBS_OTHER:INTERNAL=
+NOTIFY_STATIC_LIBS_PATHS:INTERNAL=
+NOTIFY_VERSION:INTERNAL=0.7.9
+NOTIFY_libnotify_INCLUDEDIR:INTERNAL=
+NOTIFY_libnotify_LIBDIR:INTERNAL=
+NOTIFY_libnotify_PREFIX:INTERNAL=
+NOTIFY_libnotify_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SQLite3_INCLUDE_DIR
 SQLite3_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SQLite3_LIBRARY
 SQLite3_LIBRARY-ADVANCED:INTERNAL=1
+__pkg_config_arguments_GLIB:INTERNAL=REQUIRED;glib-2.0
+__pkg_config_arguments_NOTIFY:INTERNAL=REQUIRED;libnotify
+__pkg_config_checked_GLIB:INTERNAL=1
+__pkg_config_checked_NOTIFY:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GLIB_glib-2.0
+pkgcfg_lib_GLIB_glib-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NOTIFY_gdk_pixbuf-2.0
+pkgcfg_lib_NOTIFY_gdk_pixbuf-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NOTIFY_gio-2.0
+pkgcfg_lib_NOTIFY_gio-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NOTIFY_glib-2.0
+pkgcfg_lib_NOTIFY_glib-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NOTIFY_gobject-2.0
+pkgcfg_lib_NOTIFY_gobject-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NOTIFY_notify
+pkgcfg_lib_NOTIFY_notify-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

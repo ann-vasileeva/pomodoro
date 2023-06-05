@@ -37,4 +37,6 @@ void handle_database_error(int result, sqlite3 *db);
 
 int write_lines_to_file(void *file, int argc, char **argv, char **col_names);
 
+int write_lines_to_file_2(void *file, int argc, char **argv, char **col_names);
+
 void exec_query(sqlite3 *db, const char *query, int (*callback)(void *, int, char **, char **), void *param);

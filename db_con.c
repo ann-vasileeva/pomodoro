@@ -1,4 +1,7 @@
 #include "db_con.h"
+#include "plots.h"
+#include <string.h>
+
 
 sqlite3_stmt *stmt;
 
@@ -15,6 +18,23 @@ void handle_database_error(int result, sqlite3 *db) {
 }
 
 int write_lines_to_file(void *file, int argc, char **argv, char **col_names) {
+    FILE *csv_output = (FILE *) file;
+
+    for (int i = 0; i < argc; i++) {
+        if (argv[i] && argv[i][0] != '\0') {
+            fprintf(csv_output, "%s", argv[i]);
+
+            if (i != argc - 1) {
+                fprintf(csv_output, ",");
+            }
+        }
+    }
+
+    fprintf(csv_output, "\n");
+    return 0;
+}
+
+int write_lines_to_file_2(void *file, int argc, char **argv, char **col_names) {
     if (file == NULL) {
         file = stdout;
     }
@@ -41,6 +61,7 @@ void create_tables(sqlite3 *db) {
 }
 
 void fill_survey(sqlite3 *db) {
+    stmt = NULL;
     int fatigue = 0, stress = 0, interest = 0;
     printf("This survey will help you track your well-being\n");
 
@@ -109,7 +130,7 @@ void get_statistics(time_t sec, sqlite3 *db, const char *query) {
         printf("Oops, there is no data for this period\n");
         return;
     }
-    printf("Here are your results: Your mean fatigue level is %f, stress level is %f, and interest level is %f\n",
+    printf("Here are your results:\n Your mean fatigue level is %f, stress level is %f, and interest level is %f\n",
            mean_fatigue / rows_cnt,
            mean_stress / rows_cnt, mean_interest / rows_cnt);
 }
@@ -188,14 +209,15 @@ void calculate_hours(sqlite3 *db, const char *query, time_t sec, const char *act
         total_time += sqlite3_column_int(stmt, 3);
     }
     sqlite3_finalize(stmt);
-    int hours = total_time / 60;
-    int minutes = total_time % 60;
+    int hours = total_time / 3600;
+    int minutes = (total_time % 3600) / 60;
+    int seconds = total_time % 60;
     const char *hour_str = hours == 1 ? "hour" : "hours";
     const char *minute_str = minutes == 1 ? "minute" : "minutes";
+    const char *seconds_str = seconds == 1 ? "second" : "seconds";
     struct tm *timeinfo = localtime(&max_time_ago);
     char buffer[80];
     strftime(buffer, 80, "%I:%M%p %A, %d %B %Y", timeinfo);
-    printf("Here are your results: Total time for %s is %d %s %d %s since %s \n", activity, hours, hour_str, minutes,
-           minute_str,
-           buffer);
+    printf("Here are your results: Total time for %s is %d %s %d %s %d %s since %s \n", activity, hours, hour_str,
+           minutes, minute_str, seconds, seconds_str, buffer);
 }

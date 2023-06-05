@@ -2,6 +2,18 @@
 	"entries" : 
 	[
 		{
+			"name" : "ALSA_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libasound.so"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -986,6 +998,18 @@
 			"value" : "[/usr/bin/gnuplot][v5.4.2()]"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding PkgConfig"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/bin/pkg-config][v0.29.2()]"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_SQLite3",
 			"properties" : 
 			[
@@ -996,6 +1020,426 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[/usr/include][/usr/lib/x86_64-linux-gnu/libsqlite3.so][v3.37.2()]"
+		},
+		{
+			"name" : "GLIB_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "GLIB_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_FOUND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "GLIB_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "GLIB_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "GLIB_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-lglib-2.0"
+		},
+		{
+			"name" : "GLIB_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
+		},
+		{
+			"name" : "GLIB_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "glib-2.0"
+		},
+		{
+			"name" : "GLIB_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "glib-2.0"
+		},
+		{
+			"name" : "GLIB_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr"
+		},
+		{
+			"name" : "GLIB_STATIC_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "GLIB_STATIC_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_STATIC_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "GLIB_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-lglib-2.0;-pthread;-lm;-lpcre"
+		},
+		{
+			"name" : "GLIB_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-pthread"
+		},
+		{
+			"name" : "GLIB_STATIC_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "glib-2.0;m;pcre"
+		},
+		{
+			"name" : "GLIB_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_STATIC_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_STATIC_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_STATIC_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_STATIC_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "2.72.4"
+		},
+		{
+			"name" : "GLIB_glib-2.0_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_glib-2.0_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_glib-2.0_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GLIB_glib-2.0_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
 		},
 		{
 			"name" : "GNUPLOT_EXECUTABLE",
@@ -1012,6 +1456,442 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/gnuplot"
+		},
+		{
+			"name" : "NOTIFY_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-pthread;-I/usr/include/gdk-pixbuf-2.0;-I/usr/include/libpng16;-I/usr/include/x86_64-linux-gnu;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "NOTIFY_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-pthread"
+		},
+		{
+			"name" : "NOTIFY_FOUND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "NOTIFY_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "NOTIFY_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include/gdk-pixbuf-2.0;/usr/include/libpng16;/usr/include/x86_64-linux-gnu;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "NOTIFY_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-lnotify;-lgdk_pixbuf-2.0;-lgio-2.0;-lgobject-2.0;-lglib-2.0"
+		},
+		{
+			"name" : "NOTIFY_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
+		},
+		{
+			"name" : "NOTIFY_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "notify;gdk_pixbuf-2.0;gio-2.0;gobject-2.0;glib-2.0"
+		},
+		{
+			"name" : "NOTIFY_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "libnotify"
+		},
+		{
+			"name" : "NOTIFY_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr"
+		},
+		{
+			"name" : "NOTIFY_STATIC_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-pthread;-I/usr/include/gdk-pixbuf-2.0;-I/usr/include/libpng16;-I/usr/include/x86_64-linux-gnu;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "NOTIFY_STATIC_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_STATIC_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-pthread"
+		},
+		{
+			"name" : "NOTIFY_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include/gdk-pixbuf-2.0;/usr/include/libpng16;/usr/include/x86_64-linux-gnu;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "NOTIFY_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-lnotify;-lgdk_pixbuf-2.0;-lm;-lpng16;-lm;-lz;-lm;-ljpeg;-ltiff;-lwebp;-lzstd;-llzma;-ljbig;-ljpeg;-ldeflate;-lz;-lm;-lgio-2.0;-lgmodule-2.0;-pthread;-lz;-lmount;-ldl;-lblkid;-lselinux;-lsepol;-lpcre2-8;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lm;-lpcre"
+		},
+		{
+			"name" : "NOTIFY_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-pthread"
+		},
+		{
+			"name" : "NOTIFY_STATIC_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "notify;gdk_pixbuf-2.0;m;png16;m;z;m;jpeg;tiff;webp;zstd;lzma;jbig;jpeg;deflate;z;m;gio-2.0;gmodule-2.0;z;mount;dl;blkid;selinux;sepol;pcre2-8;gobject-2.0;ffi;glib-2.0;m;pcre"
+		},
+		{
+			"name" : "NOTIFY_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_STATIC_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_STATIC_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_STATIC_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_STATIC_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "0.7.9"
+		},
+		{
+			"name" : "NOTIFY_libnotify_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_libnotify_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_libnotify_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "NOTIFY_libnotify_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_CONFIG_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "pkg-config executable"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/pkg-config"
 		},
 		{
 			"name" : "SQLite3_INCLUDE_DIR",
@@ -1046,6 +1926,54 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libsqlite3.so"
 		},
 		{
+			"name" : "__pkg_config_arguments_GLIB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "REQUIRED;glib-2.0"
+		},
+		{
+			"name" : "__pkg_config_arguments_NOTIFY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "REQUIRED;libnotify"
+		},
+		{
+			"name" : "__pkg_config_checked_GLIB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "__pkg_config_checked_NOTIFY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
 			"name" : "gnuplot_iostream_DIR",
 			"properties" : 
 			[
@@ -1056,6 +1984,102 @@
 			],
 			"type" : "PATH",
 			"value" : "gnuplot_iostream_DIR-NOTFOUND"
+		},
+		{
+			"name" : "pkgcfg_lib_GLIB_glib-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libglib-2.0.so"
+		},
+		{
+			"name" : "pkgcfg_lib_NOTIFY_gdk_pixbuf-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so"
+		},
+		{
+			"name" : "pkgcfg_lib_NOTIFY_gio-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libgio-2.0.so"
+		},
+		{
+			"name" : "pkgcfg_lib_NOTIFY_glib-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libglib-2.0.so"
+		},
+		{
+			"name" : "pkgcfg_lib_NOTIFY_gobject-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libgobject-2.0.so"
+		},
+		{
+			"name" : "pkgcfg_lib_NOTIFY_notify",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libnotify.so"
 		},
 		{
 			"name" : "pomodoro_BINARY_DIR",
@@ -1092,6 +2116,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/anna/CLionProjects/pomodoro"
+		},
+		{
+			"name" : "prefix_result",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
 		}
 	],
 	"kind" : "cache",
