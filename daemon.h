@@ -27,9 +27,10 @@ void call_daemon(int duration) {
         pid_t session_id = setsid();
         if (session_id < 0) {
             handle_errors("unsuccessful setsid");
+        } else {
+            set_timer(duration, 1);
+            _exit(0);
         }
-        set_timer(duration, 1);
-        _exit(0);
     }
 
 }
