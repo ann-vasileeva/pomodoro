@@ -18,8 +18,8 @@ enum {
 #define BLUE    "\033[34m"
 
 char sound_path[ANS_SZ];
-char *sound_setting_path = "sound_set.txt";
-char *dial_setting_path = "dial_set.txt";
+char *sound_setting_path = "files/sound_set.txt";
+char *dial_setting_path = "files/dial_set.txt";
 
 int convert_to_sec(int d, int h, int m) {
     int sec = d * 24 * 3600 + h * 3600 + m * 60;
@@ -31,7 +31,7 @@ void send_notification(const char *title, const char *message) {
     NotifyNotification *notification = notify_notification_new(
             "Pomodoro Timer",
             "Time is up!",
-            "/home/anna/CLionProjects/pomodoro/pomodoro.png"
+            "/home/anna/CLionProjects/pomodoro/files/pomodoro.png"
     );
     notify_notification_show(notification, NULL);
 
@@ -64,7 +64,7 @@ void play_sound() {
         handle_error("set pcm params");
     }
 
-    FILE *r_file = fopen("path.txt", "r");
+    FILE *r_file = fopen("files/path.txt", "r");
     if (r_file != NULL) {
         fscanf(r_file, "%s", sound_path);
         fclose(r_file);

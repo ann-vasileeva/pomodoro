@@ -31,7 +31,7 @@ void path_checker(int setup, char *mode) {
             printf("Invalid file path or insufficient access rights. Let's try again.\n");
         }
         if (setup) {
-            FILE *write_file = fopen("path.txt", "w");
+            FILE *write_file = fopen("files/path.txt", "w");
             if (write_file != NULL) {
                 fprintf(write_file, "%s", file_path);
                 fclose(write_file);
